@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    width: 1350px;
+    height: 600px;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  
+  header {
+    height: 75px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .divall {
+    font-size: 0;
+    display: -webkit-flex; 
+    display: flex;
+  }
+  
+  .div2 {
+    width: 1250px;
+  
+    background: rgb(55, 138, 180);
+  }
+  
+  .divall > div {
+    min-height: 600px;
+    text-align: center;
+  }
+  
+  .inner {
+    background: white;
+    width: 1100px;
+    height: 540px;
+    position: relative;
+    left: 75px;
+  }
+  
+  
+  select {
+    margin: 10px;
+  }
+  
+  .select1 {
+    margin: 10px;
+  }
+  
+  input {
+    margin: 10px;
+  }
+  
+  
+  .div1 {
+    background: rgb(27, 26, 26);
+    width: 100px;
+  }
+  
+  .div1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    border-top: 1px solid rgba(0,0,0,.3);
+  }
+  .div1 li {margin: 12px 0 0 0px;}
+  .div1 a {
+    text-decoration: none;
+    display: block;  
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+    position: relative;
+    transition: .3s linear;
+    border-radius: 25px;
+    border: 3px solid #E7E5DD;
+  }
+  .div1 a:hover {
+    background: #E7E5DD;
+  }
