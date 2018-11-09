@@ -18,8 +18,8 @@ import html
 form = cgi.FieldStorage()
 time = form.getfirst("TEXT_1", "не задано")
 config = {
-    'ENDPOINT': 'https://ibecomgwdb.documents.azure.com:443/',
-    'PRIMARYKEY': 'mAZUqLJo95qhSAoXYFojWXvIU4hwPCFTJMsPkEIjOGlCTVVmgxOQmNAsgCJ4na4Wn7QqdUeQ7NFa7qvf3D6KiQ==',
+    'ENDPOINT': ,
+    'PRIMARYKEY': ,
     'DATABASE': 'ibecomgw',
     'CONTAINER': 'ibecomgw'
 }
