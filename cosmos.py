@@ -14,7 +14,7 @@ import site
 import cgi
 import html
 
-
+https://ibecomfreecosmosdb.documents.azure.com/;AccountKey=wED2JFjQuXwJhl1UVuIWTmdKanpCr1vPA3uyp7hGJE81H0leAbSnhCZyMy5U0hCuJ85be4uQLZUyNttg5dWlWQ==
 form = cgi.FieldStorage()
 time = form.getfirst("TEXT_1", "не задано")
 config = {
