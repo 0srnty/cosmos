@@ -87,3 +87,7 @@
   .div1 a:hover {
     background: #E7E5DD;
   }
+
+form {
+display: inline-block;
+}
