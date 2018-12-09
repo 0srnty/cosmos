@@ -47,7 +47,18 @@ d3 = list(map(lambda s1, s2: s1+s2, d1, d2))
 sup = []
 for x in d3:
    sup.append(int(x, 16))
-
+for kk in range(512):
+ if 1 not in ab:
+    sup.insert(kk-1,0)
+for kk in range(512):
+ if 2 not in ab:
+    sup.insert((kk+512)-1,0)
+for kk in range(512):
+ if 3 not in ab:
+    sup.insert((kk+1024)-1,0)
+for kk in range(512):
+ if 4 not in ab:
+    sup.insert((kk+1536)-1,0)
 graf = plt.plot(sup)
 graf2 = plt.savefig('1.png')
 
