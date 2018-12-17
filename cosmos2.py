@@ -24,7 +24,10 @@ date =  datetime.strptime(time2,"%Y-%m-%d")
 wrongtime = str(time.mktime(date.timetuple()))
 time1 = wrongtime.replace(".0", "")
 config = {
-
+    'ENDPOINT': 'https://ibecomfreecosmosdb.documents.azure.com:443',
+    'PRIMARYKEY': 'wED2JFjQuXwJhl1UVuIWTmdKanpCr1vPA3uyp7hGJE81H0leAbSnhCZyMy5U0hCuJ85be4uQLZUyNttg5dWlWQ==',
+    'DATABASE': 'vibromaketdb',
+    'CONTAINER': 'vibromaketcol'
 }
 
 client = cosmos_client.CosmosClient(url_connection=config['ENDPOINT'], auth={'masterKey': config['PRIMARYKEY']})
