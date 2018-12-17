@@ -24,7 +24,10 @@ date =  datetime.strptime(time2,"%Y-%m-%d")
 wrongtime = str(time.mktime(date.timetuple()))
 time1 = wrongtime.replace(".0", "")
 config = {
-
+'ENDPOINT':
+    'PRIMARYKEY':
+      'DATABASE':
+    'CONTAINER':
 }
 
 client = cosmos_client.CosmosClient(url_connection=config['ENDPOINT'], auth={'masterKey': config['PRIMARYKEY']})
