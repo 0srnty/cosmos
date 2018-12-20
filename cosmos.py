@@ -44,12 +44,15 @@ for doc in results:
 d1 = (a.hex())[::2] 
 d2 = (a.hex())[1::2] 
 d3 = list(map(lambda s1, s2: s1+s2, d1, d2))
-monitor_w=GetSystemMetrics(0)
-monitor_h=GetSystemMetrics(1)
-
+d4=[]
+for ss in results:
+     d4.append(ss["DataBlock"]["Scale"])
+     break
 sup = []
 for x in d3:
    sup.append(int(x, 16))
+
+m=10**(d4[0])   
 
 for kk in range(512):
  if 1 not in ab:
@@ -62,12 +65,14 @@ for kk in range(512):
     sup.insert((kk+1024)-1,0)
 for kk in range(512):
  if 4 not in ab:
-    sup.insert((kk+1536)-1,0)    
-x2=np.arange(len(sup))
-graf = plt.bar(x2,sup)
-plt.axis([0,2047,0,255])
+    sup.insert((kk+1536)-1,0)
+sup2=[i * m for i in sup]    
+x2=[]
+for number in range(2048):
+        x2.append(number*1.25)
+graf = plt.bar(x2,(sup2))
+plt.axis([0, 2560, 0, (255*(10**(d4[0])))])
 graf2 = plt.savefig('1.png')
-
 a1=[]
 with open('text1.txt', 'r') as filehandle:
     for line in filehandle:
